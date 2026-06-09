@@ -1,0 +1,16 @@
+                         🌍 INTERNET / ISP CORE (OSPF AREA 0)
+        ----------------------------------------------------------------
+        |                       |                        |
+     [ISP1]---------------[ISP2 (MAIN)]-------------[ISP3]
+                              |
+                              |
+                         [CORE ROUTER]
+                              |
+               --------------------------------
+               |                              |
+          [SW-LAN]                        [SW-DMZ]
+               |                              |
+        PC1      PC2                  Web Server (HTTP/HTTPS)
+
+                              |
+                        Attacker PC (External)
