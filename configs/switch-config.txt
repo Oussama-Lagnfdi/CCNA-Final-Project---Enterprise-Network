@@ -1,0 +1,15 @@
+# VLAN CONFIGURATION
+
+vlan 10
+ name LAN
+
+vlan 20
+ name DMZ
+
+interface range fa0/1-10
+ switchport mode access
+ switchport access vlan 10
+
+interface range fa0/11-20
+ switchport mode access
+ switchport access vlan 20
