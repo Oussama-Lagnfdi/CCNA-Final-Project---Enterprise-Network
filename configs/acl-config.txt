@@ -1,0 +1,11 @@
+# SECURITY FIREWALL RULES
+
+access-list 100 deny ip any 192.168.1.0 0.0.0.255
+
+access-list 100 permit tcp any 172.16.0.0 0.0.0.255 eq 80
+access-list 100 permit tcp any 172.16.0.0 0.0.0.255 eq 443
+
+access-list 100 permit ip any any
+
+interface g0/2
+ ip access-group 100 in
